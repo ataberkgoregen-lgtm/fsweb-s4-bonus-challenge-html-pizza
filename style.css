@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,7 +12,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #FAF7F2;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,14 +24,39 @@
 header {
   display: flex;
   flex-direction: column;
+  align-items: center;     
   background-image: url('public/assets/iteration-1/home-banner.png');
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;        
+  width: 100%;               /* 🔑 vw yerine % */
   text-align: center;
   background-position: center;
-  gap: 0;
   background-repeat: no-repeat;
-  
+  background-size: cover;    /* arkaplan taşmasın */
+  column-gap: 0;
+}
+
+header h1 {
+  margin: 0; 
+  padding: 0; 
+  line-height: 1;
+  font-size: 6rem;
+  font-weight: lighter;
+}
+
+header img {
+  width: 20rem; 
+  margin: 0 auto; 
+  padding-top: 2rem
+}
+
+header p {
+  font-style: italic;
+  color: yellow;
+  padding-top: 2rem;
+  margin: 0;
+  font-size: 2rem;
+  font-family: 'Satisfy'
+
 }
 
 .btn {
@@ -33,15 +65,141 @@ header {
   color: black;
   padding: 0.6rem 2rem;
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight:bolder;
   border-radius: 1rem;
   width:fit-content;
   margin: 0 auto;
   border: 0px;
   cursor:pointer;
   font-weight:550;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 1rem;
 }
 
+.btn:hover {
+  background-color: #FAF7F2;
+  color: #CE2829;
+  transition: 0.4s;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  flex-direction: col;
+  justify-content:center;
+  gap: 2rem;
+  background-color: white;
+  width: 100%;
+  padding: 1rem 0;
+  align-items: center;
+
+}
+
+.icon .icon-item {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.icon .icon-item p{
+  padding-left: 1rem;
+  color: black;
+  font-family: Barlow;
+  font-weight: 600;
+  
+}
+
+.lezzetus {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  width: 58%;
+  gap: 1rem;
+}
+
+.lezzetus .lezzetus-box1 {
+  width: 50%;
+  background-image: url('public/assets/iteration-2/cta/kart-1.png');
+  min-height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+}
+
+.lezzetus .lezzetus-box1 .lezz-btn{
+  text-align: left;
+  border-radius: 2rem;
+  padding: 0.6rem 1rem;
+  font-size: small;
+  background-color: white;
+  color: red;
+  font-family: Barlow;
+  font-weight: bold;
+}
+
+.lezzetus .lezzetus-box2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0.8rem ;
+  
+}
+
+.item1 {
+  position: relative;
+  text-align: left;
+  border-radius: 1rem;
+  height: 20vh;
+  width: 100%;
+}
+
+.item1 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+  z-index: -1;
+}
+
+.item1 .baslik {
+  padding: 1rem;
+  font-family: Barlow;
+  line-height: 2.2rem;
+}
+
+.item1 .lezz-btn{
+  text-align: left;
+  border-radius: 2rem;
+  padding: 0.6rem 1rem;
+  font-size: small;
+  background-color: white;
+  color: red;
+  font-family: Barlow;
+  font-weight: bold;
+}
+
+.lezzetus .lezzetus-box1 h2{
+  font-family:Quattrocento;
+  font-size: 4.2rem;
+  line-height: 1;
+}
+
+.lezzetus .lezzetus-box1 p{
+  font-family:Barlow;
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+}
 
 a {
   font-weight: 500;
@@ -55,14 +213,14 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: xx-large;
-  font-weight: lighter;
+  
   
 }
 
@@ -94,7 +252,7 @@ h1 {
   color: #888;
 }
 
-/* button {
+button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -125,4 +283,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-} */
+}
