@@ -12,7 +12,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #FAF7F2;
+  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -51,11 +51,40 @@ header img {
 
 header p {
   font-style: italic;
-  color: yellow;
+  color: #FDC913;
   padding-top: 2rem;
   margin: 0;
   font-size: 2rem;
   font-family: 'Satisfy'
+
+}
+
+.text {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.text p {
+  font-style: italic;
+  color: #CE2829;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  font-size: 2rem;
+  font-family: 'Satisfy'
+
+}
+
+.text h1 {
+  margin: 0; 
+  padding: 0; 
+  line-height: 1;
+  font-size: 2rem;
+  font: weight 600;
+  color: #292929;
 
 }
 
@@ -83,23 +112,73 @@ header p {
 }
 
 main {
-  width: 100%;
+  width: 58%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  
 }
 
 .icon {
   display: flex;
-  flex-direction: col;
+  flex-direction: row;
   justify-content:center;
   gap: 2rem;
   background-color: white;
   width: 100%;
   padding: 1rem 0;
   align-items: center;
+  position: absolute;
+  
+}
 
+.best-foods {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: stretch;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem 0.9rem;
+  align-items: center;
+  
+}
+
+.best-foods .icon-item:hover {
+  transform:translateY(-10px);
+  transition: 0.8s;
+}
+
+.best-foods .icon-item {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  
+}
+
+.best-foods .icon-item  p{
+  padding-left: 1rem;
+  color: black;
+  font-family: Barlow;
+  font-weight: 600;
+}
+
+.best-foods .active{
+  color: white !important;
+  background-color: #292929 !important;
+}
+
+.best-foods .active p{
+  color: white !important;
+  
 }
 
 .icon .icon-item {
@@ -108,7 +187,10 @@ main {
   text-align: center;
   align-items: center;
   white-space: nowrap;
+  padding: 0 0.9rem;
 }
+
+
 
 .icon .icon-item p{
   padding-left: 1rem;
@@ -119,10 +201,10 @@ main {
 }
 
 .lezzetus {
-  margin-top: 3rem;
+  margin-top: 8.5rem;
   display: flex;
   flex-direction: row;
-  width: 58%;
+  width: 100%;
   gap: 1rem;
 }
 
@@ -201,6 +283,59 @@ main {
   padding-bottom: 1rem;
 }
 
+.cards {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem ;
+  margin-bottom: 3rem;
+}
+
+.cards .card-item {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.cards .card-item:hover {
+  transform:translateY(-10px);
+  transition: 0.8s;
+}
+
+.pizza-name {
+  text-align: left;
+  font-size: large;
+  font-weight: bold;
+}
+
+.context {
+  display: flex;
+  justify-content: space-between;
+}
+
+.context-2 {
+  display: flex;
+}
+
+.context-2 p{
+  padding: 0 2rem;
+}
+
+.context-2 p:last-child{
+  font-weight: bold;
+}
+
+
+footer {
+  background-color: #292929;
+  height: 40vh;
+  width: 100%;
+}
+
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -217,6 +352,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #FAF7F2;
 }
 
 h1 {
