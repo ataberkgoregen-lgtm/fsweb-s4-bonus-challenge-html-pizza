@@ -33,6 +33,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;    /* arkaplan taşmasın */
   column-gap: 0;
+  flex-shrink: 0;
 }
 
 header h1 {
@@ -74,7 +75,7 @@ header p {
   padding-bottom: 1rem;
   margin: 0;
   font-size: 2rem;
-  font-family: 'Satisfy'
+  font-family: 'Satisfy';
 
 }
 
@@ -131,7 +132,6 @@ main {
   padding: 1rem 0;
   align-items: center;
   position: absolute;
-  
 }
 
 .best-foods {
@@ -143,7 +143,7 @@ main {
   width: 100%;
   padding: 1rem 0.9rem;
   align-items: center;
-  
+  flex-shrink: 0;
 }
 
 .best-foods .icon-item:hover {
@@ -206,6 +206,8 @@ main {
   flex-direction: row;
   width: 100%;
   gap: 1rem;
+  flex-shrink: 0;
+  border: 1px solid red;
 }
 
 .lezzetus .lezzetus-box1 {
@@ -215,8 +217,10 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: left;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   border-radius: 1rem;
+  flex-shrink: 0;
+  border: 1px solid red;
 }
 
 .lezzetus .lezzetus-box1 .lezz-btn{
@@ -235,6 +239,7 @@ main {
   flex-direction: column;
   width: 50%;
   gap: 0.8rem ;
+  flex-shrink: 0;
   
 }
 
@@ -255,9 +260,10 @@ main {
 }
 
 .item1 .baslik {
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
   font-family: Barlow;
-  line-height: 2.2rem;
+  line-height: 2.1rem;
 }
 
 .item1 .lezz-btn{
@@ -289,6 +295,7 @@ main {
   flex-direction: row;
   gap: 2rem ;
   margin-bottom: 3rem;
+  flex-shrink: 0;
 }
 
 .cards .card-item {
@@ -403,7 +410,7 @@ button:focus-visible {
 } 
 
 
-/* @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -414,4 +421,197 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-} */
+}
+
+
+@media (max-width: 1000px) {
+
+  .lezzetus {
+    margin-top: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;    
+  }    
+
+.lezzetus .lezzetus-box1 {
+  width: 100%;
+}
+
+.lezzetus .lezzetus-box2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem ;
+    flex-shrink: 0; 
+}
+
+  .item1 .baslik {
+  padding-left: 2rem;
+  padding-top: 2rem;
+
+}
+
+
+.icon {
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.icon .icon-item {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  width: 150px;
+}
+
+.best-foods {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: stretch;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem 0.9rem;
+  align-items: center;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.cards {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction:row;
+  gap: 2rem ;
+  margin-bottom: 3rem;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+}
+
+
+@media (max-width: 675px) {
+
+    body {
+      min-width: 350px;
+    }
+
+    main {
+      width: 100%;
+    }
+    
+
+    .header {
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      font-size: 1rem;
+    }
+
+    header h1 {
+      margin: 0; 
+      padding: 0;
+      padding-top: 1rem; 
+      line-height: 1;
+      font-size: 3rem;
+      font-weight: lighter;
+    }
+
+    .lezzetus {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;    
+  }    
+
+  .lezzetus .lezzetus-box1 {
+  width: 100%;
+  padding: 1rem 1rem;
+  
+}
+
+  .lezzetus .lezzetus-box2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem ;
+    flex-shrink: 0; 
+}
+
+  .item1 .baslik {
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.item1 .baslik {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-family: Barlow;
+  line-height: 2rem;
+}
+
+
+  .icon {
+  display: flex;
+  flex-direction: row;
+  position:relative;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: stretch;
+  justify-content: center;
+}
+
+  .icon .icon-item {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  width: 150px;
+}
+
+.best-foods {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: stretch;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem 0.9rem;
+  align-items: center;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.cards {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem ;
+  margin-bottom: 3rem;
+  flex-shrink: 0;
+}
+
+
+
+
+}
