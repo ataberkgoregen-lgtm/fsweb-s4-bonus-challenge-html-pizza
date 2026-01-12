@@ -430,7 +430,7 @@ button:focus-visible {
     margin-top: 11rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;W
     align-content: center;
     align-items: stretch;    
   }    
@@ -578,6 +578,9 @@ button:focus-visible {
   margin: auto;
   align-items: stretch;
   justify-content: center;
+  flex:1;
+  gap: 1rem ;
+  
 }
 
   .icon .icon-item {
@@ -585,7 +588,7 @@ button:focus-visible {
   flex-direction: row;
   text-align: center;
   align-items: center;
-  width: 150px;
+  flex:1;
 }
 
 .best-foods {
@@ -593,13 +596,23 @@ button:focus-visible {
   flex-direction: row;
   justify-content:center;
   align-items: stretch;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
   padding: 1rem 0.9rem;
   align-items: center;
   flex-shrink: 0;
   flex-wrap: wrap;
   margin: auto;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+
+.best-foods .icon-item {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
 }
 
 .cards {
