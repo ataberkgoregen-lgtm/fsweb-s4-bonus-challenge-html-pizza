@@ -207,7 +207,7 @@ main {
   width: 100%;
   gap: 1rem;
   flex-shrink: 0;
-  border: 1px solid red;
+
 }
 
 .lezzetus .lezzetus-box1 {
@@ -220,7 +220,6 @@ main {
   padding: 2rem 2rem;
   border-radius: 1rem;
   flex-shrink: 0;
-  border: 1px solid red;
 }
 
 .lezzetus .lezzetus-box1 .lezz-btn{
