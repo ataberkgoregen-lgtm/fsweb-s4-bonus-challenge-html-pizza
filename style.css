@@ -430,7 +430,7 @@ button:focus-visible {
     margin-top: 11rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;W
+    justify-content: center;
     align-content: center;
     align-items: stretch;    
   }    
@@ -604,7 +604,7 @@ button:focus-visible {
   flex-wrap: wrap;
   margin: auto;
   justify-content: space-between;
-  margin: 0 1rem;
+
 }
 
 
