@@ -1,629 +1,571 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-}
-
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;     
-  background-image: url('public/assets/iteration-1/home-banner.png');
-  min-height: 100vh;        
-  width: 100%;               /* 🔑 vw yerine % */
-  text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;    /* arkaplan taşmasın */
-  column-gap: 0;
-  flex-shrink: 0;
-}
-
-header h1 {
-  margin: 0; 
-  padding: 0; 
-  line-height: 1;
-  font-size: 6rem;
-  font-weight: lighter;
-}
-
-header img {
-  width: 20rem; 
-  margin: 0 auto; 
-  padding-top: 2rem
-}
-
-header p {
-  font-style: italic;
-  color: #FDC913;
-  padding-top: 2rem;
-  margin: 0;
-  font-size: 2rem;
-  font-family: 'Satisfy'
-
-}
-
-.text {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.text p {
-  font-style: italic;
-  color: #CE2829;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  margin: 0;
-  font-size: 2rem;
-  font-family: 'Satisfy';
-
-}
-
-.text h1 {
-  margin: 0; 
-  padding: 0; 
-  line-height: 1;
-  font-size: 2rem;
-  font: weight 600;
-  color: #292929;
-
-}
-
-.btn {
-  display: inline-block;
-  background-color: #FDC913;
-  color: black;
-  padding: 0.6rem 2rem;
-  font-size: 0.8rem;
-  font-weight:bolder;
-  border-radius: 1rem;
-  width:fit-content;
-  margin: 0 auto;
-  border: 0px;
-  cursor:pointer;
-  font-weight:550;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-top: 1rem;
-}
-
-.btn:hover {
-  background-color: #FAF7F2;
-  color: #CE2829;
-  transition: 0.4s;
-}
-
-main {
-  width: 58%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  
-}
-
-.icon {
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  gap: 2rem;
-  background-color: white;
-  width: 100%;
-  padding: 1rem 0;
-  align-items: center;
-  position: absolute;
-}
-
-.best-foods {
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  align-items: stretch;
-  gap: 2rem;
-  width: 100%;
-  padding: 1rem 0.9rem;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-.best-foods .icon-item:hover {
-  transform:translateY(-10px);
-  transition: 0.8s;
-}
-
-.best-foods .icon-item {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  white-space: nowrap;
-  background-color: white;
-  padding: 0.5rem;
-  border-radius: 2rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  
-}
-
-.best-foods .icon-item  p{
-  padding-left: 1rem;
-  color: black;
-  font-family: Barlow;
-  font-weight: 600;
-}
-
-.best-foods .active{
-  color: white !important;
-  background-color: #292929 !important;
-}
-
-.best-foods .active p{
-  color: white !important;
-  
-}
-
-.icon .icon-item {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  white-space: nowrap;
-  padding: 0 0.9rem;
-}
-
-
-
-.icon .icon-item p{
-  padding-left: 1rem;
-  color: black;
-  font-family: Barlow;
-  font-weight: 600;
-  
-}
-
-.lezzetus {
-  margin-top: 8.5rem;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  gap: 1rem;
-  flex-shrink: 0;
-
-}
-
-.lezzetus .lezzetus-box1 {
-  width: 50%;
-  background-image: url('public/assets/iteration-2/cta/kart-1.png');
-  min-height: 40vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: left;
-  padding: 2rem 2rem;
-  border-radius: 1rem;
-  flex-shrink: 0;
-}
-
-.lezzetus .lezzetus-box1 .lezz-btn{
-  text-align: left;
-  border-radius: 2rem;
-  padding: 0.6rem 1rem;
-  font-size: small;
-  background-color: white;
-  color: red;
-  font-family: Barlow;
-  font-weight: bold;
-}
-
-.lezzetus .lezzetus-box2 {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  gap: 0.8rem ;
-  flex-shrink: 0;
-  
-}
-
-.item1 {
-  position: relative;
-  text-align: left;
-  border-radius: 1rem;
-  height: 20vh;
-  width: 100%;
-}
-
-.item1 img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.75rem;
-  z-index: -1;
-}
-
-.item1 .baslik {
-  padding-left: 1rem;
-  padding-top: 1rem;
-  font-family: Barlow;
-  line-height: 1.6rem;
-}
-
-.item1 .lezz-btn{
-  text-align: left;
-  border-radius: 2rem;
-  padding: 0.6rem 1rem;
-  font-size: small;
-  background-color: white;
-  color: red;
-  font-family: Barlow;
-  font-weight: bold;
-}
-
-.lezzetus .lezzetus-box1 h2{
-  font-family:Quattrocento;
-  font-size: 4.2rem;
-  line-height: 1;
-}
-
-.lezzetus .lezzetus-box1 p{
-  font-family:Barlow;
-  font-size: 1.25rem;
-  padding-bottom: 1rem;
-}
-
-.cards {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem ;
-  margin-bottom: 3rem;
-  flex-shrink: 0;
-}
-
-.cards .card-item {
-  color: black;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 1rem;
-}
-
-.cards .card-item:hover {
-  transform:translateY(-10px);
-  transition: 0.8s;
-}
-
-.pizza-name {
-  text-align: left;
-  font-size: large;
-  font-weight: bold;
-}
-
-.context {
-  display: flex;
-  justify-content: space-between;
-}
-
-.context-2 {
-  display: flex;
-}
-
-.context-2 p{
-  padding: 0 2rem;
-}
-
-.context-2 p:last-child{
-  font-weight: bold;
-}
-
-
-footer {
-  background-color: #292929;
-  height: 40vh;
-  width: 100%;
-}
-
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+    background-color: #FAF7F2;
+}
+
+
+header {
+    background-image: url(public/assets/iteration-1/home-banner.png);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 2rem;
+}
+
+.elements {
+    padding-top: 2rem;
+}
+
+.elements .letter{
+    padding-top: 2rem;
+}
+
+.fonetik {
+    color:#FDC913 ;
+    font-family: Satisfy;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+h2 {
+    color: white;
+    font-size: clamp(2.5rem, 6vw, 5.375rem);
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+}
+
+.btn-header {
+    font-family: 'Barlow';
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 0.8rem 3.5rem;
+    background-color: #FDC913;
+    border: 0px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    background-color: white;
+}
+
+.icons {
+    width: 50%;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: space-around;
+    padding:1rem 0;
+    flex-wrap: wrap;
+}
+
+.icon-list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    white-space:nowrap;
+}
+.icon-list p {
+    font-family: Barlow;
+    font-weight: 500;
+    font-size: 1.125rem;
+    
+}
+
+.box-model {
+  width: 50%;
+  margin: auto;
+}
+
+.three-box {
+    margin-top: 4rem;
+    display: flex;
+}
+
+.box-1,
+.boxer-1,
+.boxer-2 {
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  min-width: min-content
+}
+
+/* SOL BÜYÜK KART */
+.box-1 {
+  width: 50%;
+  min-height: 400px;
+  background-image: url("public/assets/iteration-2/cta/kart-1.png");
   display: flex;
   flex-direction: column;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: #FAF7F2;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-left: 40px;
+  padding-top: 50px;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.write {
+    padding-left: 5px;
+    padding-top: 15px;
+}
+.box-1 h3 {
+    font-family: Quattrocento;
+    font-size: clamp(3rem, 5vw, 3.85rem);
+    color: white;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+
+.box-1 p {
+    font-family: Barlow;
+    color: white;
+    font-size: clamp(0.9rem, 1vw, 2rem);
+    padding-bottom: 20px;
+
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+.box-1 .box-btn{
+    background-color: white;
+    width: max-content;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: red;
+    border: none;
 }
 
-.card {
-  padding: 2em;
+/* SAĞ TARAF */
+.two-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.boxer-1,
+.boxer-2 {
+  min-height: 190px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 15px;
+  flex-direction: column;
+  gap: 2rem ;
+  padding-left: 20px;
+  padding-top: 40px;
+  
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.boxer-1 {
+  background-image: url("public/assets/iteration-2/cta/kart-2.png");
 }
-button:hover {
-  border-color: #646cff;
+
+.boxer-1 h3 {
+    font-family: Quattrocento;
+    font-size: clamp(1.1rem, 1.6vw, 2.5rem);
+    color: white;
+    padding-bottom: 20px;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} 
+
+.boxer-1 .boxer-btn{
+    background-color: white;
+    width: max-content;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: red;
+    border: none;
+}
+
+.boxer-1 {
+    color: white;
+}
+
+.boxer-2 {
+  background-image: url("public/assets/iteration-2/cta/kart-3.png");
+}
+
+.boxer-2 h3 {
+    font-family: Quattrocento;
+    font-size: clamp(1.1rem, 1.6vw, 2.5rem);
+    color: black;
+    padding-bottom: 20px;
+}
+
+.boxer-2 .boxer-btn{
+    background-color: white;
+    width: max-content;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: red;
+    border: none;
+}
+
+.text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.text p {
+    color: red;
+    text-align: center;
+    font-family: Satisfy;
+    font-size: clamp(1.4rem, 1.8vw, 2.5rem);
+}
+
+.text h3 {
+    color: black;
+    font-family: Barlow;
+    font-size: clamp(1.6rem, 2vw, 3.5rem);
+    font-weight: 600 ;
+}
+
+.items {
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
 
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.item-icon-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.icon-list-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;    
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    padding: 0.3rem 0.7rem;
+    border-radius: 40px;
+}
+
+.active {
+    background-color: #292929 !important;
+    color: white;
+}
+
+.pizzalar {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.pizzalar .box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    border-radius: 1rem;
+    width: 29%;
+
+}
+
+.h-seperate {
+    margin-top: 20px;
+}
+.size {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-bottom: 20px;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color:#292929;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.foot {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: white;
+    text-align: left;
+    align-items: center;
+    
+}
+
+.foot .iletisim ul {
+    list-style: none;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.foot .iletisim li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.iletisim {
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 2rem;
+    gap: 1rem;
+
+}
+
+.iletisim .big{
+    width: 100%;
+    
+}
+
+.menu, .instagram {
+    margin-top: 100px;
+}
+
+
+.menu {
+    width: 33%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items:flex;
+    justify-content:flex-end;
+    gap: 1rem;
+    text-align: left;
+    height: auto;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.instagram {
+    width: 33%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+    justify-content: flex-end;
+    gap: 2rem;
+    height: auto;
+
+}
+
+.instagram .img-par {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+}    
+
+.instagram .img-par img {
+    width: 30%;
+    
+}    
+
+.bottom {   
+    margin-top: 3rem;
+    border-top: 1px solid gray;
+}
+
+.bottom div{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
 }
 
 
 @media (max-width: 1000px) {
 
-  .lezzetus {
-    margin-top: 11rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: stretch;    
-  }    
-
-.lezzetus .lezzetus-box1 {
-  width: 100%;
-}
-
-.lezzetus .lezzetus-box2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 0.8rem ;
-    flex-shrink: 0; 
-}
-
-  .item1 .baslik {
-  padding-left: 2rem;
-  padding-top: 2rem;
-
-}
-
-
-.icon {
-  display: flex;
-  flex-direction: row;
-
-  flex-wrap: wrap;
-  margin: auto;
-  align-items: stretch;
-  justify-content: center;
-}
-
-.icon .icon-item {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  width: 150px;
-}
-
-.best-foods {
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  align-items: stretch;
-  gap: 2rem;
-  width: 100%;
-  padding: 1rem 0.9rem;
-  align-items: center;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  margin: auto;
-}
-
-.cards {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction:row;
-  gap: 2rem ;
-  margin-bottom: 3rem;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-
-}
-
-
-@media (max-width: 675px) {
-
-    body {
-      min-width: 350px;
-    }
-
-    main {
-      width: 100%;
-    }
-    
-
     .header {
-      width: 100%;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      height: 100vh;
-      font-size: 1rem;
+        width: 100%;
     }
 
-    header h1 {
-      margin: 0; 
-      padding: 0;
-      padding-top: 1rem; 
-      line-height: 1;
-      font-size: 3rem;
-      font-weight: lighter;
+   .elements {
+    padding-top: 2rem;
+   }
+
+   .elements .letter {
+    padding: 0;
+   }
+
+   .elements p {
+    display: none;
+   }
+
+   .elements h2 {
+    font-size: 3.8rem !important;
+   }
+
+    .elements img {
+    width: 70%;
+   }
+    .box-model {
+        width: 100%;
+        padding: 10px 10px;
     }
 
-    .lezzetus {
-    margin-top: 3.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: stretch;    
-  }    
+    .boxer-1 {width: 100%;padding: 0;}
 
-  .lezzetus .lezzetus-box1 {
-  width: 100%;
-  padding: 1rem 1rem;
-  
-}
+    .boxer-2 {width: 100%;padding: 0;}
+    .three-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%
+    }
 
-  .lezzetus .lezzetus-box2 {
-    display: flex;
-    flex-direction: column;
+    .box-1 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .two-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .text {
     width: 100%;
-    gap: 0.8rem ;
-    flex-shrink: 0; 
+}
+    .pizzalar {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+   
 }
 
-  .item1 .baslik {
-  padding-left: 2rem;
-  padding-top: 2rem;
+.pizzalar .box {
+    width: 100%;
+    gap: 1rem;
+    
+}
+    .text h3 {
+    text-align: center;
 }
 
-.item1 .baslik {
-  padding-left: 1rem;
-  padding-top: 1rem;
-  font-family: Barlow;
-  line-height: 2rem;
-}
-
-
-  .icon {
-  display: flex;
-  flex-direction: row;
-  position:relative;
-  flex-wrap: wrap;
-  margin: auto;
-  align-items: stretch;
-  justify-content: center;
-  flex:1;
-  gap: 1rem ;
-  
-}
-
-  .icon .icon-item {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  flex:1;
-}
-
-.best-foods {
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  align-items: stretch;
-  gap: 1rem;
-  width: 100%;
-  padding: 1rem 0.9rem;
-  align-items: center;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  margin: auto;
-  justify-content: space-between;
+    .items {
+    width: 100%;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 10px 10px;
 
 }
-
-
-.best-foods .icon-item {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
+    .item-icon-list {
+    gap: 2rem;
+    padding: 0;
 }
 
-.cards {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem ;
-  margin-bottom: 3rem;
-  flex-shrink: 0;
+.icons {
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.foot {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+.menu {
+    width: 100%;
+}
+
+.instagram{
+    width: 100%;
+}
+
+.write {
+    padding-left: 30px;
+    padding-top: 40px;
 }
 
 
 
+
+.bottom div{
+    padding: 0;
+    width: 100%;
+    }
 
 }
